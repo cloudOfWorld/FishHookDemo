@@ -42,9 +42,9 @@ extern "C" {
  * name to its replacement
  */
 struct rebinding {
-  const char *name;
-  void *replacement;
-  void **replaced;
+    const char *name;        // 原方法名
+    void *replacement;        // 新方法的代码段首地址
+    void **replaced;        // 旧方法的指针
 };
 
 /*
